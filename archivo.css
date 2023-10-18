@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+
+.container{
+    background-color: rgb(178, 152, 121);
+    background-image: url(fotofondo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 99vh;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.styleform{
+    background-color: rgb(240, 248, 255, 0.8);
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+
+
+
+.flexboxBox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+input[type="text"],[type="password"]{ /*de esta manera el estilo va al type de las casillas que solo lo tengan asi*/
+    padding: 10px;
+    font-size: 18px;
+    border: none ;
+    width: 250px;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+label{
+    flex-basis: 130px;
+    margin-top: 10px;
+}
+
+input[type="button"]{
+    text-align: center;
+    width: 70%;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #fe8a6c;
+    color: white;    
+    border: none;
+    margin: 10px 0;
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(254, 138, 108, 0.7);
+}
+
+.urlbuton{
+    width: 150px;   
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.urlbuton a{
+    background-color:white ;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.urlbuton{
+    width: 150px;   
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.urlbuton a{
+    background-color:white ;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+    transition: all .4s ease-in-out;
+}
+
+.urlbuton a:hover{
+    transform: scale(1.2);
+    
+}
+
+.secondContainer{
+    display: flex;
+    width: 100%;
+    
+}
+.secondContainer div{
+    flex:1;
+}
+.fp1{
+    text-align: right;
+}
+.fp1 a{
+    text-decoration: none;
+    color: #fe8a6c;
+    font-weight: 400;    
+}
+.fp1 a:hover{
+    text-decoration: underline;
+}
+
+@media all and (max-width:480px){
+    .flexboxBox{
+        flex-direction: column;
+        
+    }
+    label{
+        flex-basis: 0;
+    }
+    .flexboxBox[type="button"]{
+        text-align: center;
+    }
+   
+}
+
+
+
+
+.singIn{
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    font-weight: 400;
+    font-size: 12px;  
+    margin: 10px 0;  
+}
+.singIn:hover{
+    text-decoration: underline;
+}
+
+.contenedor1-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+.barra{
+    width: 20%;
+    margin: 15px;   
+}
+
+.barra hr{
+    border: 0.2px solid #4e4e4e;
+    margin: 10px 0;    
+}

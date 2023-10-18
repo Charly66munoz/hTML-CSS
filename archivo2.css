@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400&display=swap');
+
+.container{
+    background-color: rgb(178, 152, 121);
+    background-image: url(fotofondo-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+.imagenb{
+    position: absolute; /* Cambia a posición absoluta */
+    top: 0; /* Lo posiciona en la parte superior del elemento padre (body) */
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+.imagenb img{
+    height: 100px;
+    height: 100px;
+    margin:0 
+    
+}
+.styleform{
+    background-color: rgb(240, 248, 255, 0.8);
+    padding: 15px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    align-items: center;   
+}
+
+.styleform h1{
+    font-family: 'Lobster', sans-serif;
+    font-size: 38px;
+}
+
+.flexboxBox{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.flexboxBox input[type="email"],[type="password"]{ /*de esta manera el estilo va al type de las casillas que solo lo tengan asi*/
+    padding: 10px;
+    font-size: 15px;
+    border: none ;
+    width: 250px;
+    background-color: rgb(255, 255, 255, 0.8);
+    
+}
+
+.flexboxBox label{
+    flex-basis: 100px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.barra{
+    width: 50%;
+      
+}
+
+.barra hr{
+    border: 0.1px solid #4e4e4e;
+        
+}
+
+.formularioP{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.f1{     
+    margin-top: 10px;
+}
+
+.f1 label{
+    flex-basis: 110px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.f1 input[type="text"]{ /*de esta manera el estilo va al type de las casillas que solo lo tengan asi*/
+    padding: 10px;
+    font-size: 15px;
+    border: none ;
+    width: 150px;
+    background-color: rgb(255, 255, 255, 0.8);   
+}
+.f1 input[type="date"]{
+    padding: 5px;
+    font-size: 12px;
+   
+    border: none ;
+    width: 100px;
+    background-color: rgb(255, 255, 255, 0.8); 
+    
+}
+
+input[type="button"]{
+    text-align: center;
+    width: 70%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: #fe8a6c;
+    color: white;    
+    border: none;
+    margin: 10px;
+   
+}
+
+input[type="button"]:hover{
+    cursor: pointer;
+    background-color: rgb(254, 138, 108, 0.7);
+}
+
+
+
+
+
+@media all and (max-width:480px){
+    .flexboxBox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flexboxBox label{
+        flex-basis: 0;
+    }
+    .f1 label{
+        flex-basis: 0;
+    }
+    .flexboxBox[type="button"]{
+        text-align: center;
+    }
+   
+}
+
+@media all and (max-width:950px){
+    .imagenb{
+        display: none;
+    }
+   
+}
